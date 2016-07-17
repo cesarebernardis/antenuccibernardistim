@@ -1,12 +1,12 @@
 <html>
 	<head>
-	<script src="/tim/js/header.js"></script>
+	<script src="/js/header.js"></script>
 	<script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<title></title>
 	</head>
 	<body ng-app="myApp">
-	<script src="/tim/js/navbar.js"></script>
+	<script src="/js/navbar.js"></script>
 		<div id="main-content" class="main" ng-controller="ctrl">
 		
 		<div class="max-sized">
@@ -34,8 +34,8 @@
 					</div>
 					<div ng-show="checkSmartlifes() || checkAssistances()" class="related-links">
 						<h4 class="blue">More for this device</h4>
-						<a ng-show="checkSmartlifes()" href="/tim/smartlifes/smartlifesrel/index.html?id={{device.id}}&type=device"><button>Smart Life Services</button></a>
-						<a ng-show="checkAssistances()" href="/tim/assistanceservices/assistancesrel/index.html?id={{device.id}}&type=device"><button>Assistance Services</button></a>
+						<a ng-show="checkSmartlifes()" href="/smartlifes/smartlifesrel/index.html?id={{device.id}}&type=device"><button>Smart Life Services</button></a>
+						<a ng-show="checkAssistances()" href="/assistanceservices/assistancesrel/index.html?id={{device.id}}&type=device"><button>Assistance Services</button></a>
 					</div>
 				</div>
 			</div>
@@ -53,6 +53,6 @@
 				</div>
 		</div>
 		</div>
-	<script src="/tim/js/footer.js"></script>
+	<script src="/js/footer.js"></script>
 	</body>
 </html>
