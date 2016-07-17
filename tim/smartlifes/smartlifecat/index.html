@@ -1,0 +1,81 @@
+<html>
+	<head>
+	<script src="/tim/js/header.js"></script>
+	<script>
+	(function () {
+		var slcat = getValueFromUrl("category");
+		var slObj;
+		
+		var app = angular.module('myApp', []);
+		app.controller('ProductList', function($scope, $http) {
+			
+			var first = true;
+			
+			$scope.capitalizeFirstLetter = function (string) {
+				return string.charAt(0).toUpperCase() + string.slice(1);
+			}
+			
+			$scope.flatString = function(string){
+				return string.replace(/ /gi,"").toLowerCase();
+			}
+			
+			$http.post(
+				"http://antenuccibernardistim.altervista.org/tim/smartlifes/smartlifecat/slcat.php",
+				{"category":slcat,"request":"smartlifes"}
+			).then(function (response) {
+				$scope.smartlifes = response.data;
+			});
+			
+		});
+		
+		$(document).ready(function(){
+		
+			$.ajax({
+			  type: "POST",
+			  url: 'http://antenuccibernardistim.altervista.org/tim/smartlifes/smartlifecat/slcat.php',
+			  data: {category:slcat, request:"smartlife_category"},
+			  success: function(data){
+				$('#breadcactive').html(slcat);
+				slObj = JSON.parse(data);
+				$('.main-img').css('background-image', 'url("img/' + slObj.image_big + '")');
+				$('.slcat-name').html(slObj.name);
+				$('.slcat-descr').html(slObj.description);
+				$('title').text('TIM - Smart Life Services - '+slObj.name);
+			  }
+			});
+			
+		});
+		
+	})();
+	</script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+	</head>
+	<body ng-app="myApp">
+	<script src="/tim/js/navbar.js"></script>
+		<div id="main-content">
+		<ol class="breadcrumb">
+			<li><a href="http://antenuccibernardistim.altervista.org/tim/smartlifes/index.html">Smart Life Services</a></li>
+			<li class="active" id="breadcactive"></li>
+		</ol>
+		<div class="main-img">
+		<h1 class="slcat-name"></h1>
+		<h4 class="slcat-descr"></h4>
+		</div>
+			<div class="max-sized" ng-controller="ProductList">
+				<ul class="nav nav-tabs">
+				  <li ng-repeat="x in smartlifes" ng-class='{active:$first}'><a data-toggle="tab" href="#{{flatString(x.name)}}">{{x.name}}</a></li>
+				</ul>
+				<div class="tab-content">
+				  <div ng-repeat="x in smartlifes" id="{{flatString(x.name)}}" class="tab-pane fade in" ng-class='{active:$first}'>
+				  <div class="row">
+					  <div class="col-md-6 col-xs-12 sl-icon"><img ng-src="smartlife/smartlifeimages/{{x.icon}}"/></div>
+					  <div class="col-md-6 col-xs-12 sl-desc"><h3>{{x.name}}</h3><p>{{x.description}}</p><a href="smartlife/index.html?id={{x.id}}"><button>Discover</button></a></div>
+				  </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	<script src="/tim/js/footer.js"></script>
+	</body>
+</html>

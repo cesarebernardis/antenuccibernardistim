@@ -1,0 +1,193 @@
+.max-sized{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.max-sized>p{
+	padding: 0 15px;
+}
+
+.tim-logo-transformation{
+	width: 100%;
+	height: 400px;
+	background: #00499C url('img/tim-logo.gif') center no-repeat;
+	background-size: 100% auto;
+}
+
+.tab-content h1{
+	color: #00499C;
+	margin: 25px 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.tab-content>p{
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+#thenewtim p{
+	font-size: 20px;
+}
+
+#thenewtim .interlude{
+	padding: 50px;
+	text-align: center;
+}
+
+#tim-berners-lee{
+	width: 100%;
+	background: transparent url('img/character.jpg') top right no-repeat;
+	background-size: 100% auto;
+}
+
+#tim-berners-lee h4, #tim-berners-lee h2{
+	color: #FFF;
+	padding: 20px;
+}
+
+@media (min-width: 768px){
+	.tim-logo-transformation{
+		background-size: auto auto;
+	}
+	
+	#thenewtim>p{
+		padding: 0 80px;
+	}
+	
+	#tim-berners-lee{
+		padding: 120px;
+		height: 500px;
+	}
+	
+	#tim-berners-lee h4, #tim-berners-lee h2{
+		max-width: 50%;
+	}
+}
+
+div#thenewtim .thumbnail, .thumbnail .caption{
+	padding: 0;
+}
+
+div#thenewtim .thumbnail .caption .text{
+	padding: 25px;
+}
+
+div#thenewtim .thumbnail img.header{
+	margin: 0;
+	width: 100%;
+}
+
+div#thenewtim .thumbnail h4{
+	color: #ED1C24;
+	margin: 0 0 25px 0;
+}
+
+div#thenewtim .thumbnail p{
+	margin: 0;
+}
+
+div#initiatives .row{
+	padding: 50px 0;
+}
+
+div#initiatives .caption{
+	padding: 50px;
+}
+
+div#initiatives .caption.left{
+	text-align: center;
+	font-size: 18px;
+}
+
+div#initiatives .caption.right{
+	text-align: left;
+}
+
+div#initiatives .caption .header{
+	border-radius: 50%;
+}
+
+div#initiatives .caption h3{
+	color: #00499C;
+}
+
+div#initiatives .caption h4{
+	color: #ED1C24;
+	padding: 10px 0;
+}
+
+div#initiatives .caption h5{
+	color: #727272;
+	padding: 10px 0;
+	border-bottom: 1px solid #727272;
+}
+
+div#initiatives .caption.right{
+	background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    position: relative;
+}
+
+@media (min-width: 768px){
+	
+	div#initiatives .row{
+		border-bottom: 1px solid #e0e0e0;
+	}
+	
+	div#initiatives .caption.right:after {
+		background-color: #fcfcfc;
+		border: 1px solid #e0e0e0;
+		content: "";
+		height: 100%;
+		left: 10px;
+		position: absolute;
+		top: 10px;
+		width: 100%;
+		z-index: -1;
+	}
+	
+}
+
+div#connectedtoday {
+    padding: 50px 0;
+}
+
+div#connectedtoday .row{
+	margin: 0;
+}
+
+div#connectedtoday .row>div{
+	padding: 5px;
+}
+
+div#connectedtoday .caption{
+	min-height: 310px;
+    padding: 80px 40px;
+}
+
+div#connectedtoday .caption#tl{
+	color: #FFF;
+	background: transparent url('img/bg-fabio-fazio.jpg') no-repeat top right;
+}
+
+div#connectedtoday .caption#bl{
+	color: #FFF;
+	text-align: center;
+	background: #0078C1;
+}
+
+
+div#connectedtoday .caption#bm{
+	color: #FFF;
+	text-align: center;
+	background: transparent url('img/bg-video-360.jpg') no-repeat center;
+}
+
+div#connectedtoday .caption#r{
+	color: #004990;
+	background: transparent url('img/bg-pif.jpg') no-repeat top right;
+	background-size: 100% auto;
+	min-height: 638px;
+	margin: 4px 0;
+}

@@ -1,0 +1,39 @@
+button{
+	margin: 10px;
+}
+
+.blue{
+	color: #00499c;
+}
+.red{
+	color: #ED1C24;
+}
+
+
+.devimage{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: auto;
+	max-height: 500px;
+}
+
+.assistance{
+	padding-top: 20px;
+}
+
+.as-desc{
+	padding: 20px;
+}
+.as-desc h1, .as-faq h1{
+	margin: 0px;
+}
+
+.as-faq h1{
+	padding: 0 20px;
+}
+
+@media(max-width:768px){
+	.related-link{
+		text-align: center;
+	}
+}

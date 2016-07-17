@@ -1,0 +1,76 @@
+h1{
+	margin: 0;
+	padding: 20px 10px;
+}
+
+.nav-tabs>li{
+	float: none;
+	display: inline-block;
+}
+
+.nav-tabs{
+	text-align: center;
+}
+
+.main-img{
+	text-align: center;
+	background: transparent center no-repeat;
+	padding: 120px 10px;
+	color: #FFF;
+}
+
+@media(min-width:768px){
+	.main-img{
+		background-size: 100% auto;
+	}
+}
+
+.main-img h4{
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.max-sized{
+	padding: 10px 0 30px 0;
+}
+
+.tab-content .row{
+	padding: 20px 0;
+}
+
+.sl-icon{
+	text-align: center;
+}
+
+.sl-icon img{
+	padding: 25px 0;
+	max-width: 100%;
+	max-height: 280px;
+}
+
+.sl-desc{
+	padding: 30px 20px;
+	text-align: center;
+}
+
+.sl-desc h3{
+	margin: 20px 0;
+	color: #00499c;
+}
+
+.sl-desc p{
+	margin: 10px 0;
+}
+
+.sl-desc button{
+	margin: 10px 0;
+}
+
+.tab-content .row{
+	min-height: 300px;
+}
+
+.breadcrumb{
+	margin: 0 auto;
+	max-width: 1000px;
+}

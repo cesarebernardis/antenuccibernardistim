@@ -1,0 +1,90 @@
+<html>
+	<head>
+	<script src="/tim/js/header.js"></script>
+	<script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+	</head>
+	<body ng-app="myApp">
+	<script src="/tim/js/navbar.js"></script>
+		<div id="main-content" class="main" ng-controller="ctrl">
+			
+			<div class="max-sized">
+				<ol class="breadcrumb">
+					<li><a href="http://antenuccibernardistim.altervista.org/tim/assistanceservices/index.html">Assistance Services</a></li>
+					<li class="active" id="breadcactive">{{smartlife.name}}</li>
+				</ol>
+			<h1 id="main-title" class="blue"></h1>
+				<div id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+					   aria-expanded="true" aria-controls="collapseOne">
+				    <div class="panel-heading" role="tab" id="headingOne">
+					  <i class="fa fa-angle-up fa-2x"></i>
+				      <h4 class="panel-title">
+					  {{sub1[0].subname}}
+					
+				      </h4>
+				    </div>
+					</a>
+				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <ul>
+					<li class="assistance" ng-repeat="x in sub1"><a class="{{x.link}}" href="http://antenuccibernardistim.altervista.org/tim/assistanceservices/assistanceservicecat/assistance/index.html?id={{x.id}}">{{x.name}}</a></li>
+				      </ul>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+					   aria-expanded="false" aria-controls="collapseTwo">
+				    <div class="panel-heading" role="tab" id="headingTwo">
+						<i class="fa fa-angle-down fa-2x"></i>
+				      <h4 class="panel-title">
+					  {{sub2[0].subname}}
+					
+				      </h4>
+				    </div></a>
+				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <ul>
+					<li class="assistance" ng-repeat="x in sub2"><a class="{{x.link}}" href="http://antenuccibernardistim.altervista.org/tim/assistanceservices/assistanceservicecat/assistance/index.html?id={{x.id}}">{{x.name}}</a></li>
+				      </ul>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+					   aria-expanded="false" aria-controls="collapseThree">
+				    <div class="panel-heading" role="tab" id="headingThree">
+						<i class="fa fa-angle-down fa-2x"></i>
+				      <h4 class="panel-title">
+					  {{sub3[0].subname}}
+					
+				      </h4>
+				    </div></a>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				      <ul>
+					<li class="assistance" ng-repeat="x in sub3"><a class="{{x.link}}" href="http://antenuccibernardistim.altervista.org/tim/assistanceservices/assistanceservicecat/assistance/index.html?id={{x.id}}">{{x.name}}</a></li>
+				      </ul>
+				    </div>
+				  </div>
+				  <div class="panel panel-default" ng-show="sub4.length > 0">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+					   aria-expanded="false" aria-controls="collapseFour">
+				    <div class="panel-heading" role="tab" id="headingFour">
+					  <i class="fa fa-angle-down fa-2x"></i>
+				      <h4 class="panel-title">
+					  {{sub4[0].subname}}
+				      </h4>
+				    </div>
+					</a>
+				    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				      <ul>
+					<li class="assistance" ng-repeat="x in sub4"><a class="{{x.link}}" href="http://antenuccibernardistim.altervista.org/tim/assistanceservices/assistanceservicecat/assistance/index.html?id={{x.id}}">{{x.name}}</a></li>
+				      </ul>
+				    </div>
+				  </div>
+				  
+				</div>
+			</div>
+		</div>
+	<script src="/tim/js/footer.js"></script>
+	</body>
+</html>

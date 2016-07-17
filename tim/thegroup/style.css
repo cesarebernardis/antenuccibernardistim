@@ -1,0 +1,74 @@
+.nav.nav-tabs{
+	text-align: center;
+}
+
+.nav.nav-tabs li{
+	float: none;
+	display: inline-block;
+}
+
+.tab-content .tab-header{
+	width: 100%;
+	background: transparent url('img/header-bg.jpg') top right;
+	background-size: cover;
+	padding: 25px 15px;
+}
+
+.tab-content .tab-header h1{
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.tab-content .tab-paragraph{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.tab-content .tab-paragraph .tab-subtitle{
+	text-align: center;
+	padding: 20px;
+	font-size: 1.2em;
+	border-bottom: 1px solid #BBB;
+}
+
+.tab-content .tab-paragraph .tab-single-content{
+	padding: 20px;
+	text-align: justify;
+}
+
+.tab-content .tab-paragraph .tab-single-content>h2{
+	text-align: center;
+}
+
+@media (max-width: 768px){
+	.tab-content .tab-paragraph .tab-single-content>p>.tim-logo{
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px){
+	.tab-content .tab-paragraph .tab-single-content .row{
+		width: 35%;
+		display: inline-block;
+		margin-left: 15px;
+	}
+	
+	.tab-content .tab-paragraph .tab-single-content .row>div{
+		width: 100%;
+	}
+	
+	.tab-content .tab-paragraph .tab-single-content>p{
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.tab-content #profile .tab-paragraph .tab-single-content>p{
+		width: 62%;
+	}
+	
+	.tab-content .tab-paragraph .tab-single-content>p>.tim-logo{
+		float: left;
+		margin: 150px 20px;
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,61 @@
+<html>
+	<head>
+	<script src="/tim/js/header.js"></script>
+	<script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+	</head>
+	<body ng-app="myApp">
+	<script src="/tim/js/navbar.js"></script>
+		<div id="main-content" ng-controller="ProductList">
+			<div class="max-sized">
+				<div id="main-title">
+					<h1 class="blue"></h1>
+					<a href=""><h3 class="blue"></h3></a>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-3 filters"><div class="caption"><div class="thumbnail">
+						<form id="filters">
+						<div class="box">
+						<h4>Filters <i class="fa fa-2 fa-angle-up" class="collapsed" data-toggle="collapse" data-target="#filtercollapse" aria-expanded="false" aria-hidden="true"></i></h4>
+						</div>
+						<div id="filtercollapse" class="collapse in">
+						<div class="box">
+						<h4>Type</h4>
+						<div ng-repeat="x in types"><input type="checkbox" name="type" ng-click="updateDevices()" value="type='{{x.type}}'"/>{{capitalizeFirstLetter(x.type)}}<br/></div>
+						</div>
+						<div class="box">
+						<h4>Price</h4>
+						<div ng-repeat="x in priceSteps">
+						<input type="checkbox" name="price" value="{{x.value}}" ng-click="updateDevices()"/>{{x.text}}<br/>
+						</div>
+						</div>
+						<div class="box">
+						<h4>Brand</h4>
+						<div ng-repeat="x in brands"><input type="checkbox" name="brand" ng-click="updateDevices()" value="brand='{{x.brand}}'"/>{{x.brand}}<br/></div>
+						</div>
+						</div>
+						</form>
+					</div></div></div>
+					<div class="col-sm-12 col-md-9 devices"><div class="caption">
+						<div class="col-sm-12 col-md-4 device" ng-repeat="x in devices">
+						<a href="../devicecat/device/index.html?id={{x.id}}">
+						<div class="caption"><div class="thumbnail">
+						<img class="thumbimg" ng-src="../devicecat/device/deviceimages/{{ x.image }}"/>
+						<h3>{{ x.name }}</h3>
+						<div class="price-block">
+							<h6 class="original-price" ng-show="checkDiscount(x)">{{ x.original_price | currency:"" }}&euro;</h6>
+							<h4 ng-show="!checkInstallments(x)">{{ x.price | currency:"" }}&euro;</h4>
+							<h4 ng-show="checkInstallments(x)">{{ calculateInstallment(x) | currency:"" }}&euro;/month</h4>
+						</div>
+						<div class="installments-info" ng-show="checkInstallments(x)">in {{ x.installment }} installments at zero interests</div>
+						</div></div>
+						</a>
+						</div>
+					</div></div>
+				</div>
+			</div>
+		</div>
+	<script src="/tim/js/footer.js"></script>
+	</body>
+</html>

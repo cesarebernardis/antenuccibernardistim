@@ -1,0 +1,64 @@
+#main-title{
+	margin: 15px;
+}
+
+.disabled{
+   pointer-events: none;
+   cursor: default;
+   color: #bdbdbd;
+}
+
+.enabled{}
+
+.panel ul{
+	margin: 0;
+	padding: 15px;
+}
+
+.blue{
+	color: #00499c;
+}
+.red{
+	color: #ED1C24;
+}
+
+.toppadding{
+	padding: 20px 0;
+}
+
+.devimage{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: auto;
+	max-height: 500px;
+}
+
+.assistance{
+    padding: 15px 15px;
+    list-style: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.panel{
+	border-radius: 0;
+}
+
+.panel-heading{
+    padding: 20px 30px;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+    background: #0B3D86;
+    color: #FFF;
+}
+
+.fa{
+	margin-right: 10px;
+}
+
+.panel-heading i, .panel-heading h4{
+	display: inline-block;
+}
+
+.panel-title{
+	font-size: 24px;
+}

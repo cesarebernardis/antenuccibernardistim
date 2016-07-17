@@ -1,0 +1,75 @@
+h1{
+	color: #00499C;
+	margin: 0;
+	padding: 20px 10px;
+}
+
+.caption .thumbnail{
+	text-align: center;
+}
+
+.caption .thumbnail .box{
+	border-bottom: 1px solid #e0e0e0;
+	text-align: left;
+	padding: 5px;
+}
+
+.caption .thumbnail .box h4{
+	color: #00499c;
+}
+
+.caption .thumbnail h4{
+	color: #ED1C24;
+}
+
+.device .caption .thumbnail{
+	min-height: 400px;
+}
+
+.device .caption .thumbnail h3{
+	margin: 20px 0;
+}
+
+.device .caption .thumbnail .price-block{
+	margin: 10px 0;
+}
+
+.device .caption .thumbnail .price-block h4{
+	margin: 0px;
+}
+
+.device .caption .thumbnail .device-img{
+	min-height: 200px;
+}
+.device .caption .thumbnail .device-img>img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.original-price{
+	margin: 0px;
+	color: #333;
+	text-decoration: line-through;
+}
+
+.filters .thumbnail{
+	padding: 5px;
+} 
+
+.filters .thumbnail .box{
+	padding: 0px 5px 10px 5px;
+}
+
+.filters input{
+	margin: 5px 10px;
+}
+
+.fa-angle-down, .fa-angle-up{
+	float: right;
+	margin-right: 5px;
+}
+
+.fa-angle-down:hover, .fa-angle-up:hover{
+	cursor: pointer;
+}

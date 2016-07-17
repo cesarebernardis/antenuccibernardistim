@@ -1,0 +1,63 @@
+h2{
+	color: #00499c;
+}
+
+.blue{
+	color: #00499c;
+}
+.red{
+	color: #ED1C24;
+}
+
+@media(max-width:768px){
+	
+	.nav-tabs>li>a {
+		padding: 25px 14px;
+	}
+	
+}
+
+.devimage{
+	padding: 20px 0;
+	max-width: 100%;
+	max-height: 500px;
+}
+
+.sl-desc{
+	padding: 30px;
+}
+
+.sl-desc h1{
+	margin: 20px;
+}
+.sl-desc h2{
+	margin: 10px;
+}
+
+.sl-desc h1, .sl-desc h2, .sl-desc h3, .sl-desc h4, .sl-desc .installments-info, .sl-icon{
+	text-align: center;
+}
+
+.tab-content{
+	padding: 20px;
+}
+
+.tab-content .tab-pane h1, .tab-content .tab-pane h2 {
+    font-size: 16px;
+	font-weight: bold;
+}
+
+.main-info{
+	padding: 20px 0;
+	border-bottom: 1px solid #e0e0e0;
+	text-align: center;
+}
+
+#description{
+	text-align: center;
+}
+
+.related-links{
+	padding: 15px;
+	text-align: center;
+}
