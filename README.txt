@@ -2,7 +2,6 @@ Frameworks used
 - JQuery
 - Bootstrap
 - AngularJS
-- Swipebox plugin
 
 In "The Group" we have implemented some pages that weren't required
 (Group Description, Business & Market, Branding, Story)
