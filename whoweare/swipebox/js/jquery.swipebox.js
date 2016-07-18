@@ -789,7 +789,7 @@
 						'autoplay' : ( plugin.settings.autoplayVideos ? '1' : '0' ),
 						'v' : ''
 					});
-					iframe = '<iframe width="560" height="315" src="//' + youtubeUrl[1] + '/embed/' + youtubeUrl[2] + '?' + qs + '" frameborder="0" allowfullscreen></iframe>';
+					iframe = '<iframe width="560" height="315" src="http//' + youtubeUrl[1] + '/embed/' + youtubeUrl[2] + '?' + qs + '" frameborder="0" allowfullscreen></iframe>';
 
 				} else if ( vimeoUrl ) {
 					qs = ui.parseUri( url, {
