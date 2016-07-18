@@ -28,6 +28,10 @@ button{
 	max-height: 500px;
 }
 
+.sl-icon{
+	text-align: center;
+}
+
 .sl-desc{
 	padding: 30px;
 }
