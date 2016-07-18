@@ -169,6 +169,8 @@ div#connectedtoday .caption{
 div#connectedtoday .caption#tl{
 	color: #FFF;
 	background: transparent url('img/bg-fabio-fazio.jpg') no-repeat top right;
+	max-width: 640px;
+    margin: 0 auto;
 }
 
 div#connectedtoday .caption#bl{
@@ -182,6 +184,8 @@ div#connectedtoday .caption#bm{
 	color: #FFF;
 	text-align: center;
 	background: transparent url('img/bg-video-360.jpg') no-repeat center;
+	max-width: 320px;
+    margin: 0 auto;
 }
 
 div#connectedtoday .caption#r{
