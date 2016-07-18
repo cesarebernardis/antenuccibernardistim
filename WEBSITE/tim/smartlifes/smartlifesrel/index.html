@@ -1,0 +1,39 @@
+<html>
+	<head>
+	<script src="/tim/js/header.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>TIM - Smartlife for device</title>
+	<script src="script.js"></script>
+	</head>
+	<body>
+	<script src="/tim/js/navbar.js"></script>
+	<div id="main-content" class="main" ng-app="myApp" ng-controller="ctrl">
+		<div class="max-sized">
+		<div id="main-title">
+			<h1 class="blue">Smartlife for device</h1>
+			<a href="http://antenuccibernardistim.altervista.org/tim/devices/devicecat/device/index.html?id={{device.id}}">
+				<h3 class="blue">{{device.name}}</h3>
+			</a>
+		</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-4  thumbnails" ng-repeat="x in record" on-finish-render="ngRepeatFinished">
+					<a href="http://antenuccibernardistim.altervista.org/tim/smartlifes/smartlifecat/smartlife/index.html?id={{x.id}}">
+						<div class="thumbnail">
+							<div class="sl-icon">
+								<img ng-src="../smartlifecat/smartlife/smartlifeimages/{{x.icon}}">
+							</div>
+							<div class="caption">
+								<h3>{{ x.name }}</h3></br>
+								<div class="description"> 
+									{{ x.description }}
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/tim/js/footer.js"></script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+	<head>
+	<script src="/tim/js/header.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>TIM - Assistance Services</title>
+	<script src="script.js"></script>
+	</head>
+	<body>
+	<script src="/tim/js/navbar.js"></script>
+	<div id="main-content" class="main" ng-app="myApp" ng-controller="ctrl">
+		<div class="banner">
+			<div class="max-sized">
+			<h2>Assistance services</h2>
+			<h4>If you have some issues with our products, here you can find all the help you need</h4>
+			</div>
+		</div>
+		<div class="max-sized">
+			<div class="row ">
+				<div class="col-sm-6 col-md-3  thumbnails" ng-repeat="x in record">
+					<a href="assistanceservicecat/index.html?category={{x.name}}">
+						<div class="thumbnail">
+							<img ng-src="img/{{x.image}}">
+							<div class="caption">
+								<h3>{{ x.name }}</h3></br>
+								<div class="description"> 
+									{{ x.description }}
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/tim/js/footer.js"></script>
+	</body>
+</html>

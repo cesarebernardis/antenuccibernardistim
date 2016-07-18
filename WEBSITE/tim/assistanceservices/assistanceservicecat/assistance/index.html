@@ -1,0 +1,33 @@
+<html>
+	<head>
+	<script src="/tim/js/header.js"></script>
+	<script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+	</head>
+	<body ng-app="myApp">
+	<script src="/tim/js/navbar.js"></script>
+		<div id="main-content" class="main" ng-controller="ctrl">
+		
+			<div class="max-sized">
+				<ol class="breadcrumb">
+					<li><a href="http://antenuccibernardistim.altervista.org/tim/assistanceservices/index.html">Assistance Services</a></li>
+					<li><a href="http://antenuccibernardistim.altervista.org/tim/assistanceservices/assistanceservicecat/index.html?category={{category.name}}">{{category.name}}</a></li>
+					<li class="active" id="breadcactive">{{services.name}}</li>
+				</ol>
+				<div class="as-desc">
+					<h1 class="blue">{{services.name}}</h1></br>
+					<p ng-bind-html="services.description"></p>
+					<div class="related-link">
+						<a href="/tim/devices/devicesrel/index.html?id={{services.id}}&type=assistance"><button>Related Devices</button></a>
+					</div>
+				</div>
+				<div class="as-faq">
+					<h1 ng-show="checkFaq()" class="blue">FAQ</h1></br>
+					<p ng-bind-html="services.info_support"></p>
+				</div>
+			</div>
+		</div>
+	<script src="/tim/js/footer.js"></script>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+.thumbnail{
+	padding-top:10%;
+	min-height: 350px;
+	text-align: center;
+}
+
+.description{
+	text-align: center;
+}
+.thumbnail h3{
+	text-align: center;
+	color: #00499c;
+}
+.banner{
+	margin-bottom: 50px;
+	padding: 50px;
+	color: #FFF;
+	width: 100%;
+	height: 340px;
+	background: transparent url('img/banner.jpg') center no-repeat;
+	background-size: auto 100%;
+}
+
+@media(min-width:768px){
+	.banner{
+		padding: 120px 50px;
+	}
+	
+	.row.outlet .thumbnail img{
+		margin: 0 100px;
+	}
+}
+
+.row.outlet .thumbnail>img, .row.outlet .thumbnail>.caption{
+	display: inline-block;
+}
+	
+.banner h2{
+	margin: 0 0 20px 10px;
+}
+
+.banner h4{
+	max-width: 50%;
+}
+
+@media (max-width: 768px){
+	
+	.banner{
+		height: 180px;
+		padding: 20px;
+	}
+	
+	.banner h4{
+		max-width: 70%;
+	}
+	
+}

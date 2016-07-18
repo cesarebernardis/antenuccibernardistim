@@ -1,0 +1,10 @@
+document.write('<script src="/tim/js/jquery.min.js"></script>');
+document.write('<script src="/tim/js/angular.min.js"></script>');
+document.write('<script src="/tim/js/bootstrap.min.js"></script>');
+document.write('<script src="/tim/js/main.js"></script>');
+document.write('<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>');
+document.write('<link href="/tim/css/font-awesome.min.css" rel="stylesheet"/>');
+document.write('<link href="/tim/css/bootstrap.min.css" rel="stylesheet"/>');
+document.write('<link href="/tim/css/main.css" rel="stylesheet" type="text/css"/>');
+document.write('<link rel="icon" href="/tim/img/icon.png"/>');
+document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">');
